@@ -1,0 +1,37 @@
+@mixin align-content($size:'') {
+    .#{$size}content-normal {
+        align-content: normal;
+    }
+
+    .#{$size}content-center {
+        align-content: center;
+    }
+
+    .#{$size}content-start {
+        align-content: flex-start;
+    }
+
+    .#{$size}content-end {
+        align-content: flex-end;
+    }
+
+    .#{$size}content-between {
+        align-content: space-between;
+    }
+
+    .#{$size}content-around {
+        align-content: space-around;
+    }
+
+    .#{$size}content-evenly {
+        align-content: space-evenly;
+    }
+
+    .#{$size}content-baseline {
+        align-content: baseline;
+    }
+
+    .#{$size}content-stretch {
+        align-content: stretch;
+    }
+}

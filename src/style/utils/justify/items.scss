@@ -1,0 +1,17 @@
+@mixin justify-items($size:'') {
+    .#{$size}justify-items-start {
+        justify-items: start;
+    }
+
+    .#{$size}justify-items-end {
+        justify-items: end;
+    }
+
+    .#{$size}justify-items-center {
+        justify-items: center;
+    }
+
+    .#{$size}justify-items-stretch {
+        justify-items: stretch;
+    }
+}

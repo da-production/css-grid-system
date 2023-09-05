@@ -1,0 +1,33 @@
+@mixin justify-content($size:'') {
+    .#{$size}justify-normal {
+        justify-content: normal;
+    }
+
+    .#{$size}justify-start {
+        justify-content: flex-start;
+    }
+
+    .#{$size}justify-end {
+        justify-content: flex-end;
+    }
+
+    .#{$size}justify-center {
+        justify-content: center;
+    }
+
+    .#{$size}justify-between {
+        justify-content: space-between;
+    }
+
+    .#{$size}justify-around {
+        justify-content: space-around;
+    }
+
+    .#{$size}justify-evenly {
+        justify-content: space-evenly;
+    }
+
+    .#{$size}justify-stretch {
+        justify-content: stretch;
+    }
+}

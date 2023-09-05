@@ -1,0 +1,40 @@
+@mixin grid-columns-span($name,$size:'') {
+    @for $i from 1 through 12 {
+        .#{$name}#{$size}-#{$i} {
+            grid-column: span $i / span $i;
+        }
+    }
+    
+    .#{$name}#{$size}-auto {
+        grid-column: auto;
+    }
+
+    .#{$name}#{$size}-full{
+        grid-column: 1 / -1;
+    }
+}
+
+
+@mixin grid-columns-start($name,$size:'') {
+    @for $i from 1 through 12 {
+        .#{$name}#{$size}-#{$i} {
+            grid-column-start: $i;
+        }
+    }
+    
+    .#{$name}#{$size}-auto {
+        grid-column-start: auto;
+    }
+}
+
+@mixin grid-columns-end($name,$size:'') {
+    @for $i from 1 through 12 {
+        .#{$name}#{$size}-#{$i} {
+            grid-column-end: $i;
+        }
+    }
+    
+    .#{$name}#{$size}-auto {
+        grid-column-end: auto;
+    }
+}

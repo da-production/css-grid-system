@@ -1,0 +1,21 @@
+@mixin place-items($size:'') {
+    .#{$size}place-items-start {
+        place-items: start;
+    }
+
+    .#{$size}place-items-end {
+        place-items: end;
+    }
+
+    .#{$size}place-items-center {
+        place-items: center;
+    }
+
+    .#{$size}place-items-baseline {
+        place-items: baseline;
+    }
+
+    .#{$size}place-items-stretch {
+        place-items: stretch;
+    }
+}

@@ -1,0 +1,25 @@
+@mixin align-self($size:'') {
+    .#{$size}self-auto {
+        align-self: auto;
+    }
+
+    .#{$size}self-start {
+        align-self: flex-start;
+    }
+
+    .#{$size}self-end {
+        align-self: flex-end;
+    }
+
+    .#{$size}self-center {
+        align-self: center;
+    }
+
+    .#{$size}self-stretch {
+        align-self: stretch;
+    }
+
+    .#{$size}self-baseline {
+        align-self: baseline;
+    }
+}

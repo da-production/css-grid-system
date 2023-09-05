@@ -1,0 +1,20 @@
+// Grid Auto Rows
+// Utilities for controlling the size of implicitly-created grid rows.
+
+@mixin grid-auto-rows($name,$size:'') {
+    .#{$name}#{$size}-rows-auto {
+        grid-auto-rows: auto;
+    }
+
+    .#{$name}#{$size}-rows-min {
+        grid-auto-rows: min-content;
+    }
+
+    .#{$name}#{$size}-rows-max {
+        grid-auto-rows: max-content;
+    }
+
+    .#{$name}#{$size}-rows-fr {
+        grid-auto-rows: minmax(0, 1fr);
+    }
+}

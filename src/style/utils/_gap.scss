@@ -1,0 +1,47 @@
+// Gap
+// Utilities for controlling gutters between grid and flexbox items.
+
+@mixin gap($name, $size:'') {
+    .#{$name}#{$size}-0 {
+        gap: 0px;
+    }
+
+    .#{$name}#{$size}-x-0 {
+        column-gap: 0px;
+    }
+
+    .#{$name}#{$size}-y-0 {
+        row-gap: 0px;
+    }
+
+    .#{$name}#{$size}-px {
+        gap: 1px;
+    }
+
+    .#{$name}#{$size}-x-px {
+        column-gap: 1px;
+    }
+
+    .#{$name}#{$size}-y-px {
+        row-gap: 1px;
+    }
+
+    @for $i from 1 through 96 {
+        .#{$name}#{$size}-#{$i} {
+            gap: $i * 0.25rem;
+            
+        }
+
+        .#{$name}#{$size}-x-#{$i} {
+            column-gap: $i * 0.25rem;
+            
+        }
+
+        .#{$name}#{$size}-y-#{$i} {
+            row-gap: $i * 0.25rem;
+            
+        }
+    }
+
+
+}

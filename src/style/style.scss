@@ -1,0 +1,121 @@
+@import 'base';
+@import 'variables/name';
+@import 'utils/grid-template';
+@import 'utils/grid-column';
+@import 'utils/grid-rows';
+@import 'utils/grid-auto-flow';
+@import 'utils/grid-auto-column';
+@import 'utils/grid-auto-row';
+
+@media (max:640px){
+  .#{$prefix}container{max-width: 640px}
+}
+@media (max:768px){
+  .#{$prefix}container{max-width: 768px}
+}
+@media (max:1024px){
+  .#{$prefix}container{max-width: 1024px}
+}
+@media (max:1280px){
+  .#{$prefix}container{max-width: 1280px}
+}
+
+.#{$prefix}grid {
+  display: grid;
+}
+
+@include grid($grid-template);
+@include grid-columns-span($grid-column-span);
+@include grid-columns-start($grid-column-start);
+@include grid-columns-end($grid-column-end);
+@include grid-rows($grid-rows);
+@include grid-rows-span($grid-rows-span);
+@include grid-rows-start($grid-rows-start);
+@include grid-rows-end($grid-rows-end);
+@include grid-auto-flow($grid-auto-flow);
+@include grid-auto-columns($grid-auto-columns);
+@include grid-auto-rows($grid-auto-rows);
+
+/* Mobile */
+@media (max-width: 640px){
+  // styles
+}
+/* Extra small devices */
+@media (min-width:641px) and (max-width: 767px){
+
+  @include grid($grid-template,'sm\\:');
+  @include grid-columns-span($grid-column-span,'sm\\:');
+  @include grid-columns-start($grid-column-start,'sm\\:');
+  @include grid-columns-end($grid-column-end,'sm\\:');
+  @include grid-rows($grid-rows,'sm\\:');
+  @include grid-rows-span($grid-rows-span,'sm\\:');
+  @include grid-rows-start($grid-rows-start,'sm\\:');
+  @include grid-rows-end($grid-rows-end,'sm\\:');
+  @include grid-auto-flow($grid-auto-flow,'sm\\:');
+  @include grid-auto-columns($grid-auto-columns,'sm\\:');
+  @include grid-auto-rows($grid-auto-rows,'sm\\:');
+}
+
+/* Small Tablet */
+@media (min-width:768px) and (max-width: 1024px){
+  // styles
+  @include grid($grid-template,'md\\:');
+  @include grid-columns-span($grid-column-span,'md\\:');
+  @include grid-columns-start($grid-column-start,'md\\:');
+  @include grid-columns-end($grid-column-end,'md\\:');
+  @include grid-rows($grid-rows,'md\\:');
+  @include grid-rows-span($grid-rows-span,'md\\:');
+  @include grid-rows-start($grid-rows-start,'md\\:');
+  @include grid-rows-end($grid-rows-end,'md\\:');
+  @include grid-auto-flow($grid-auto-flow,'md\\:');
+  @include grid-auto-columns($grid-auto-columns,'md\\:');
+  @include grid-auto-rows($grid-auto-rows,'md\\:');
+}
+
+/* Large tablettes/laptops */
+@media (min-width:1025px) and (max-width: 1280px){
+  // styles
+  @include grid($grid-template,'lg\\:');
+  @include grid-columns-span($grid-column-span,'lg\\:');
+  @include grid-columns-start($grid-column-start,'lg\\:');
+  @include grid-columns-end($grid-column-end,'lg\\:');
+  @include grid-rows($grid-rows,'lg\\:');
+  @include grid-rows-span($grid-rows-span,'lg\\:');
+  @include grid-rows-start($grid-rows-start,'lg\\:');
+  @include grid-rows-end($grid-rows-end,'lg\\:');
+  @include grid-auto-flow($grid-auto-flow,'lg\\:');
+  @include grid-auto-columns($grid-auto-columns,'lg\\:');
+  @include grid-auto-rows($grid-auto-rows,'lg\\:');
+}
+
+/* Desktops */
+@media (min-width:1281px) and (max-width: 1536px){
+  // styles
+  @include grid($grid-template,'xl\\:');
+  @include grid-columns-span($grid-column-span,'xl\\:');
+  @include grid-columns-start($grid-column-start,'xl\\:');
+  @include grid-columns-end($grid-column-end,'xl\\:');
+  @include grid-rows($grid-rows,'xl\\:');
+  @include grid-rows-span($grid-rows-span,'xl\\:');
+  @include grid-rows-start($grid-rows-start,'xl\\:');
+  @include grid-rows-end($grid-rows-end,'xl\\:');
+  @include grid-auto-flow($grid-auto-flow,'xl\\:');
+  @include grid-auto-columns($grid-auto-columns,'xl\\:');
+  @include grid-auto-rows($grid-auto-rows,'xl\\:');
+}
+
+/* Extra large screens */
+@media (min-width:1537px){
+  // styles
+  @include grid($grid-template,'xxl\\:');
+  @include grid-columns-span($grid-column-span,'xxl\\:');
+  @include grid-columns-start($grid-column-start,'xxl\\:');
+  @include grid-columns-end($grid-column-end,'xxl\\:');
+  @include grid-rows($grid-rows,'xxl\\:');
+  @include grid-rows-span($grid-rows-span,'xxl\\:');
+  @include grid-rows-start($grid-rows-start,'xxl\\:');
+  @include grid-rows-end($grid-rows-end,'xxl\\:');
+  @include grid-auto-flow($grid-auto-flow,'xxl\\:');
+  @include grid-auto-columns($grid-auto-columns,'xxl\\:');
+  @include grid-auto-rows($grid-auto-rows,'xxl\\:');
+}

@@ -1,0 +1,21 @@
+@mixin justify-slef($size:'') {
+    .#{$size}justify-self-auto {
+        justify-self: auto;
+    }
+
+    .#{$size}justify-self-start {
+        justify-self: start;
+    }
+
+    .#{$size}justify-self-end {
+        justify-self: end;
+    }
+
+    .#{$size}justify-self-center {
+        justify-self: center;
+    }
+
+    .#{$size}justify-self-stretch {
+        justify-self: stretch;
+    }
+}

@@ -1,0 +1,19 @@
+$prefix: '';
+
+$grid-template: #{$prefix}gt;
+
+// columns name
+$grid-column-span: #{$prefix}gc-span;
+$grid-column-start: #{$prefix}gc-start;
+$grid-column-end: #{$prefix}gc-end;
+
+// rows name
+$grid-rows: #{$prefix}gr;
+$grid-rows-span: #{$prefix}gr-span;
+$grid-rows-start: #{$prefix}gr-start;
+$grid-rows-end: #{$prefix}gr-end;
+
+
+$grid-auto-flow: #{$prefix}ga-flow;
+$grid-auto-columns: #{$prefix}ga-columns;
+$grid-auto-rows: #{$prefix}ga-rows;

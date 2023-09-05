@@ -1,0 +1,24 @@
+// Grid Auto Flow
+// Utilities for controlling how elements in a grid are auto-placed.
+@mixin grid-auto-flow($name,$size:'') {
+    .#{$name}#{$size}-flow-row {
+        grid-auto-flow: row;
+    }
+
+    .#{$name}#{$size}-flow-col {
+        grid-auto-flow: column;
+    }
+
+    .#{$name}#{$size}-flow-dense {
+        grid-auto-flow: dense;
+    }
+
+    .#{$name}#{$size}-flow-row-dense {
+        grid-auto-flow: row dense;
+    }
+
+    .#{$name}#{$size}-flow-col-dense {
+        grid-auto-flow: column dense;
+    }
+
+}

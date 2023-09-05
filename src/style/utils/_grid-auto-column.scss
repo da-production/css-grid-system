@@ -1,0 +1,20 @@
+// Grid Auto Columns
+// Utilities for controlling the size of implicitly-created grid columns.
+
+@mixin grid-auto-columns($name,$size:'') {
+    .#{$name}#{$size}cols-auto {
+        grid-auto-columns: auto;
+    }
+
+    .#{$name}#{$size}-cols-min {
+        grid-auto-columns: min-content
+    }
+
+    .#{$name}#{$size}-cols-max {
+        grid-auto-columns: max-content
+    }
+
+    .#{$name}#{$size}-cols-fr {
+        grid-auto-columns: minmax(0, 1fr)
+    }
+}

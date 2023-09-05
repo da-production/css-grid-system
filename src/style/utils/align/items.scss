@@ -1,0 +1,21 @@
+@mixin align-items($size:'') {
+    .#{$size}items-start {
+        align-items: flex-start;
+    }
+
+    .#{$size}items-end {
+        align-items: flex-end;
+    }
+
+    .#{$size}items-center {
+        align-items: center;
+    }
+
+    .#{$size}items-baseline {
+        align-items: baseline;
+    }
+
+    .#{$size}items-stretch {
+        align-items: stretch;
+    }
+}

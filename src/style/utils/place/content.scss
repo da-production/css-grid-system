@@ -1,0 +1,33 @@
+@mixin place-content($size:'') {
+    .#{$size}place-content-center {
+        place-content: center;
+    }
+
+    .#{$size}place-content-start {
+        place-content: start;
+    }
+
+    .#{$size}place-content-end {
+        place-content: end;
+    }
+
+    .#{$size}place-content-between {
+        place-content: space-between;
+    }
+
+    .#{$size}place-content-around {
+        place-content: space-around;
+    }
+
+    .#{$size}place-content-evenly {
+        place-content: space-evenly;
+    }
+
+    .#{$size}place-content-baseline {
+        place-content: baseline;
+    }
+
+    .#{$size}place-content-stretch {
+        place-content: stretch;
+    }
+}

@@ -1,0 +1,21 @@
+@mixin place-self($size:'') {
+    .#{$size}place-self-auto {
+        place-self: auto;
+    }
+
+    .#{$size}place-self-start {
+        place-self: start;
+    }
+
+    .#{$size}place-self-end {
+        place-self: end;
+    }
+
+    .#{$size}place-self-center {
+        place-self: center;
+    }
+
+    .#{$size}place-self-stretch {
+        place-self: stretch;
+    }
+}
